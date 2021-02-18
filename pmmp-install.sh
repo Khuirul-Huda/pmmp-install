@@ -32,3 +32,5 @@ if [ $start == y ]; then
 
 ./start.sh
 fi
+echo "To Start Server -> ./start.sh"
+echo "ThankYou"
