@@ -16,7 +16,7 @@ cd pmmp-install
 ```
 ```bash
 sudo chmod +x ./pmmp-install.sh 
-./install.sh
+./pmmp-install.sh
 
 #How to Update?
 sudo chmod +x ./pmmp-update.sh
