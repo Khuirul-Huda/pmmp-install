@@ -1,12 +1,6 @@
 #!/bin/bash
 #prepare?
-echo "Run Apt Update? Y/N"
-read answers
-if [ $answers == y ]; then 
 
-sudo apt update
-sudo apt upgrade -y 
-fi
 echo "PMMP INSTALL [PREPARE]"
 echo "================="
 echo "Installation on:"
@@ -18,7 +12,14 @@ read installon
 if [ $installon == 1 ]; then
 bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/execute.sh)
 echo "Selected [1] Linux"
-elif [$installon == 2]; then
+echo "Run Apt Update? Y/N"
+read answers
+if [ $answers == y ]; then 
+
+sudo apt update
+sudo apt upgrade -y 
+fi
+elif [ $installon == 2]; then
   bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/termux.sh)
   echo "Selected [2] Termux"
   pkg update
