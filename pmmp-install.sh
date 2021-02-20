@@ -1,11 +1,5 @@
 #!/bin/bash
 
-
-
-#tested on Ubuntu 18.04
-
-
-
 #prepare?
 echo "Run Apt Update? Y/N"
 read answers
