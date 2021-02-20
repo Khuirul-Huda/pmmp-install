@@ -24,7 +24,6 @@ elif [ $installon == 2 ]; then
   echo "Selected [2] Termux"
   pkg update
   pkg upgrade
-  pkg install wget
   pkg install curl
  
 fi
