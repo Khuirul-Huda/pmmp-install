@@ -19,7 +19,7 @@ if [ $answers == y ]; then
 sudo apt update
 sudo apt upgrade -y 
 fi
-elif [ $installon == 2]; then
+elif [ $installon == 2 ]; then
   bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/termux.sh)
   echo "Selected [2] Termux"
   pkg update
