@@ -2,4 +2,4 @@ language: bash
 before_script:
     - curl -L "https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/pmmp-install.sh"
 script:
-    - bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/pmmp-install.sh)
+    - bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/execute.sh)
