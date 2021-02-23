@@ -1,7 +1,7 @@
 #!/bin/bash
 #prepare?
 
-echo "PMMP INSTALL [PREPARE]"
+echo "PMMP INSTALL "
 echo "================="
 echo "Installation on:"
 echo "[1] Linux (Ubuntu, etc.)"
@@ -10,7 +10,7 @@ echo "=================="
 echo " Answers: (1/2)"
 read installon
 if [ $installon == 1 ]; then
-bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/execute.sh)
+
 echo "Selected [1] Linux"
 echo "Run Apt Update? Y/N"
 read answers
@@ -19,12 +19,14 @@ if [ $answers == y ]; then
 sudo apt update
 sudo apt upgrade -y 
 fi
+bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/execute.sh)
+
 elif [ $installon == 2 ]; then
-  bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/termux.sh)
+  
   echo "Selected [2] Termux"
   pkg update
   pkg upgrade
   pkg install curl
- 
+ bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/termux.sh)
 fi
-echo "Installation Prepare End"
+echo "Installation End"

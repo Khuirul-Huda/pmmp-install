@@ -7,7 +7,7 @@ tar -xvf "PHP_Linux-x86_64.tar.gz"
 rm "PHP_Linux-x86_64.tar.gz"
 curl -O "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/PocketMine-MP.phar"
 curl -O "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/start.sh"
-sudo chmod +x ./start.sh
+chmod +x ./start.sh
 #start the server for first time
 
 echo "To Start Server, Type ./start.sh"
