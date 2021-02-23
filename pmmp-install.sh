@@ -8,6 +8,7 @@ echo "[1] Linux (Ubuntu, etc.)"
 echo "[2] Termux (Android)"
 echo "=================="
 echo " Answers: (1/2)"
+echo "Type other number to cancel"
 read installon
 if [ $installon == 1 ]; then
 

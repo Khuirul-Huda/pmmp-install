@@ -3,12 +3,14 @@
 #actually this is for my personal uses only
 
 SECONDS=0
+
 rm PocketMine-MP.phar
 rm ./start.sh
 wget "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/PocketMine-MP.phar"
 wget "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/start.sh"
 chmod +x ./start.sh
-#you're ✅ done
+
+
 if (( $SECONDS > 3600 )) ; then
     let "hours=SECONDS/3600"
     let "minutes=(SECONDS%3600)/60"
@@ -27,5 +29,6 @@ if [ $start == y ]; then
 
 ./start.sh
 else
+
 echo "Start Server > ./start.sh"
 fi
