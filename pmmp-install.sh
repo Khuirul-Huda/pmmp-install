@@ -30,4 +30,5 @@ elif [ $installon == 2 ]; then
   pkg install curl
  bash <(curl https://raw.githubusercontent.com/Khuirul-Huda/pmmp-install/main/termux.sh)
 fi
+
 echo "Installation End"
