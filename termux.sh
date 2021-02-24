@@ -1,7 +1,7 @@
+#!/bin/bash
+
 SECONDS=0
 pkg install tar
-
-
 curl -O "https://jenkins.pmmp.io/job/PHP-7.4-Linux-x86_64/9/artifact/PHP_Linux-x86_64.tar.gz"
 tar -xvf "PHP_Linux-x86_64.tar.gz"
 rm "PHP_Linux-x86_64.tar.gz"
@@ -12,7 +12,6 @@ chmod +x ./start.sh
 echo "To Start Server, Type ./start.sh"
 echo "dont forget to use screen so the server will always on!"
 echo "ThankYou"
-
 
 if (( $SECONDS > 3600 )) ; then
     let "hours=SECONDS/3600"

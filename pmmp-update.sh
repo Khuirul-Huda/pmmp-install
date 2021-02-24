@@ -10,7 +10,6 @@ wget "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/PocketMine-MP.phar
 wget "https://jenkins.pmmp.io/job/PocketMine-MP/1828/artifact/start.sh"
 chmod +x ./start.sh
 
-
 if (( $SECONDS > 3600 )) ; then
     let "hours=SECONDS/3600"
     let "minutes=(SECONDS%3600)/60"
@@ -26,9 +25,7 @@ fi
 echo "Do you want to start server now? [Y/N]"
 read start
 if [ $start == y ]; then
-
 ./start.sh
 else
-
 echo "Start Server > ./start.sh"
 fi
